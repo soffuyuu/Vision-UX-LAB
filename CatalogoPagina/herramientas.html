@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Herramientas - Vision UX Lab</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/herramientas.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cambiosHerramientas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/tipo" href="recursos/favicon.ico">
+</head>
+
+<body>
+    <main class="animate__animated animate__fadeIn">
+        <nav id="nav-escritorio">
+            <ul>
+                <li><a href="index.html"><img src="recursos/logo-vision-ux-lab.png"/></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="active-li"><a href="herramientas.html">Herramientas</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="index.html #contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <nav id="nav-responsiva">
+            <a href="index.html"><img src="recursos/logo-vision-ux-lab.png"/></a>
+            <ul>
+                <li id="menu-icon" onclick="abrirNavResponsiva()"><i class="fa-solid fa-bars"></i></li>
+                <li id="close-icon" onclick="cerrarNavResponsiva()"><i class="fa fa-times"></i></li>
+                <li><a href="index.html" onclick="cerrarNavResponsiva()">Inicio</a></li>
+                <li class="active-li"><a href="herramientas.html" onclick="cerrarNavResponsiva()">Herramientas</a></li>
+                <li><a href="recursos.html" onclick="cerrarNavResponsiva()">Recursos</a></li>
+                <li><a href="acercade.html" onclick="cerrarNavResponsiva()">Acerca de</a></li>
+                <li><a href="index.html#formulario" onclick="cerrarNavResponsiva()">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="principal">
+            <div id="volver-arriba" onclick="scrollArriba()">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <section id="herramientas-main">
+                <div id="herramientas-header" class="header">
+                    <div id="contenedor-header-herramientas">
+                        <div>
+                            <h1 class="titulo blanco">Accesibilidad en</h1>
+                            <h1 class="titulo blanco">acción</h1>
+                        </div>
+                        <img src="recursos/ojo.png" alt="Ícono de un ojo">
+                        <p class="subtitulo blanco">Diseñar accesible es más fácil cuando puedes experimentar en tiempo
+                            real. </p>
+                        <p class="subtitulo blanco">Descubre cómo diseñar una web para cada mirada.</p>
+
+                        <div id="iconos-categorias">
+                            <div class="categoria">
+                                <div class="img-categoria">
+                                    <a href="#" data-section="disenoDeInterfaces" class="nav-link active">Diseño de interfaces<img src="recursos/categoria1.png" alt="Ícono de una página web"></a>
+                                </div>
+                                <label class="blanco">Diseño de interfaces</label>
+                            </div>
+
+                            <div class="categoria">
+                                <div class="img-categoria">
+                                    <a href="#" data-section="accesibilidadWeb" class="nav-link">Pruebas de accesibilidad<img src="recursos/categoria2.png" alt="Ícono de lentes"></a>
+                                </div>
+                                <label class="blanco">Pruebas de accesibilidad</label>
+                            </div>
+
+                            <div class="categoria">
+                                <div class="img-categoria">
+                                    <a href="#" data-section="desarrolloWeb" class="nav-link">Desarrollo web<img
+                                            src="recursos/categoria3.png"
+                                            alt="Ícono que hace referencia al Internet"></a>
+                                </div>
+                                <label class="blanco">Desarrollo web</label>
+                            </div>
+
+                            <div class="categoria">
+                                <div class="img-categoria">
+                                    <a href="#" data-section="capacitacion" class="nav-link">Capacitación y recursos<img
+                                            src="recursos/categoria4.png" alt="Ícono de un libro abierto"></a>
+                                </div>
+                                <label class="blanco">Capacitación y recursos</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <section id="probar-herramientas-seccion">
+                    <div id="probar-herramientas-contenedor">
+                        <div id="uso-de-herramientas">
+                            <h2 class="morado titulo-2">Uso de herramientas</h2>
+                            <div id="contenedor-input">
+                                <input id="buscador" type="text" placeholder="Busca una herramienta o recurso:"
+                                    tabindex="0">
+                                <span>
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="texto-categoria">
+                            <div>
+                                <h2 class="morado titulo-3">Nombre categoría</h2>
+                                <p class="parrafo negro">Herramientas que ayudan a diseñar para personas con algún grado
+                                    de
+                                    discapacidad
+                                    visual.
+                                    Explora herramientas para mejorar la usabilidad, el contraste y la navegación en tus
+                                    páginas web.</p>
+                            </div>
+                            <button onclick="location.reload();">Reiniciar</button>
+                        </div>
+
+                        <div id="no-resultados-contenedor">
+                            <h1 class="morado titulo">¡Ups! <i class="fas fa-heart-broken"></i></h1>
+                            <p class="negro parrafo">Parece que no encontramos esa herramienta en el catálogo. Asegúrate
+                                de escribir el nombre correctamente o <a href="index.html#contacto"
+                                    class="morado link">haz clic aquí</a> para sugerir que la añadamos al catálogo.</p>
+                        </div>
+
+                        <div id="contenedor-herramientas">
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="div-footer">
+            <img src="recursos/logo-vision-ux-lab-blanco.png" />
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="index.html" class="parrafo">Inicio</a></li>
+                <li><a href="#" class="parrafo">Acerca de</a></li>
+                <li><a href="herramientas.html" class="parrafo">Herramientas</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="recursos.html" class="parrafo">Recursos</a></li>
+                <li><a href="index.html#contacto" class="parrafo">Contacto</a></li>
+                <li><a class="parrafo" href="politicadeprivacidad.html">Política de privacidad</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul id="hecho-por">
+                <li class="subtitulo">Hecho por:</li>
+                <li><a class="parrafo" href="https://www.instagram.com/kikelunam_/" target="_blank">Kike Luna</a></li>
+                <li><a class="parrafo" href="https://www.instagram.com/soffuyu/" target="_blank">Sofía Terrazas</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
+<script src="js/volverArriba.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/conectarapi.js"></script>
+<script src="js_herramientas/contraste.js"></script>
+<script src="js_herramientas/protanopia.js"></script>
+<script src="js_herramientas/leerPantalla.js"></script>
+<script src="js_herramientas/navTeclado.js"></script>
+<script src="js_herramientas/generadorColores.js"></script>
+<script src="js_herramientas/espaciadoTexto.js"></script>
+<script src="js_herramientas/aumentarTexto.js"></script>
+<script src="js_herramientas/lecturaFacil.js"></script>
+<script src="js_herramientas/dislexia.js"></script>
+<script src="js_herramientas/filtroProtector.js"></script>
+<script src="js_herramientas/modoEnfoque.js"></script>
+<script src="js_herramientas/herramientaZoom.js"></script>
+<script src="js_herramientas/simulador.js"></script>
+
+</html>

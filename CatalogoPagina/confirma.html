@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confirmación - Vision UX Lab</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/tipo" href="recursos/favicon.ico">
+</head>
+
+<body>
+    <main class="animate__animated animate__fadeIn">
+        <nav id="nav-escritorio">
+            <ul>
+                <li><a href="index.html"><img src="recursos/logo-vision-ux-lab.png"/></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="herramientas.html">Herramientas</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li class="active-li"><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <nav id="nav-responsiva">
+            <a href="index.html"><img src="recursos/logo-vision-ux-lab.png"/></a>
+            <ul>
+                <li id="menu-icon" onclick="abrirNavResponsiva()"><i class="fa-solid fa-bars"></i></li>
+                <li id="close-icon" onclick="cerrarNavResponsiva()"><i class="fa fa-times"></i></li>
+                <li><a href="index.html" onclick="cerrarNavResponsiva()">Inicio</a></li>
+                <li><a href="herramientas.html" onclick="cerrarNavResponsiva()">Herramientas</a></li>
+                <li><a href="recursos.html" onclick="cerrarNavResponsiva()">Recursos</a></li>
+                <li><a href="acercade.html" onclick="cerrarNavResponsiva()">Acerca de</a></li>
+                <li><a href="index.html#formulario" onclick="cerrarNavResponsiva()">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="contenedor-confirmacion">
+            <div id="confirmacion-formulario">
+                <img src="recursos/mensaje-enviado.png" />
+                <h1 class="morado titulo-1">¡Mensaje enviado!</h1>
+                <p class="negro parrafo">¡Hemos recibido tu mensaje! En breve revisaremos la información que nos
+                    enviaste y te responderemos lo más pronto posible. Mientras tanto, si tienes alguna otra duda o
+                    comentario, no dudes en escribirnos de nuevo.</p>
+                <button><a href="index.html">Regresar</a></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="div-footer">
+            <img src="recursos/logo-vision-ux-lab-blanco.png" />
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="index.html" class="parrafo">Inicio</a></li>
+                <li><a href="#" class="parrafo">Acerca de</a></li>
+                <li><a href="herramientas.html" class="parrafo">Herramientas</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="recursos.html" class="parrafo">Recursos</a></li>
+                <li><a href="index.html#contacto" class="parrafo">Contacto</a></li>
+                <li><a class="parrafo" href="politicadeprivacidad.html">Política de privacidad</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul id="hecho-por">
+                <li class="subtitulo">Hecho por:</li>
+                <li><a class="parrafo" href="https://www.instagram.com/kikelunam_/" target="_blank">Kike Luna</a></li>
+                <li><a class="parrafo" href="https://www.instagram.com/soffuyu/" target="_blank">Sofía Terrazas</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="js/nav.js"></script>
+<script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
+
+</html>

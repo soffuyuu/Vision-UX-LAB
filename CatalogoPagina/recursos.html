@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recursos - Vision UX Lab</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/recursos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/tipo" href="recursos/favicon.ico">
+</head>
+
+<body>
+    <main class="animate__animated animate__fadeIn">
+        <nav id="nav-escritorio">
+            <ul>
+                <li><a href="index.html"><img src="recursos/logo-vision-ux-lab.png"/></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="herramientas.html">Herramientas</a></li>
+                <li class="active-li"><a href="recursos.html">Recursos</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <nav id="nav-responsiva">
+            <a href="index.html"><img src="recursos/logo-vision-ux-lab.png"/></a>
+            <ul>
+                <li id="menu-icon" onclick="abrirNavResponsiva()"><i class="fa-solid fa-bars"></i></li>
+                <li id="close-icon" onclick="cerrarNavResponsiva()"><i class="fa fa-times"></i></li>
+                <li><a href="index.html" onclick="cerrarNavResponsiva()">Inicio</a></li>
+                <li><a href="herramientas.html" onclick="cerrarNavResponsiva()">Herramientas</a></li>
+                <li class="active-li"><a href="recursos.html" onclick="cerrarNavResponsiva()">Recursos</a></li>
+                <li><a href="acercade.html" onclick="cerrarNavResponsiva()">Acerca de</a></li>
+                <li><a href="index.html#formulario" onclick="cerrarNavResponsiva()">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="principal">
+            <div id="volver-arriba" onclick="scrollArriba()">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <section id="recursos-principal">
+                <div id="recursos-header" class="header">
+                    <div class="seccion-header">
+                        <h1 class="titulo blanco">RECURSOS</h1>
+                        <p class="parrafo blanco">Accede a recursos para mejorar la accesibilidad web de tus proyectos y
+                            crear experiencias inclusivas para personas con discapacidad visual.</p>
+                    </div>
+                </div>
+
+                <section id="contraste-y-color">
+                    <img src="recursos/sticker-contraste.png" />
+                    <div class="flex-recursos">
+                        <h1 class="blanco titulo-secciones">CONTRASTE Y COLOR</h1>
+                        <p class="parrafo blanco">Tener un buen contraste de color en tu sitio web beneficia a todos tus
+                            usuarios, pero es particularmente beneficioso para los que tienen cierto tipo de ceguera al
+                            color y otras afecciones similares, como los que experimentan una baja sensibilidad al
+                            contraste y tienen dificultades para diferenciar colores parecidos. Esto se debe a que no
+                            distinguen las áreas brillantes y oscuras con tanta facilidad como las personas que no
+                            tienen esa discapacidad, y por lo tanto tienen problemas para ver los bordes y otros
+                            detalles.</p>
+                        <p class="parrafo blanco">Al elegir un esquema de color para tu sitio web, selecciona colores de
+                            primer plano y de fondo que tengan un buen contraste. Haz que el contraste de color sea lo
+                            mejor posible dentro de las limitaciones de tu diseño: preferiblemente elige el nivel AAA,
+                            pero al menos cumple con el nivel AA.</p>
+
+                            <p class="subtitulo blanco" style="font-weight: 600;">Recursos:</p>
+
+                            <ul>
+                                <li class="blanco parrafo"><a class="parrafo blanco link" href="https://developer.mozilla.org/es/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable/Color_contrast" target="_blank">MDN Web Docs</a></li>
+                                <li class="parrafo blanco"><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" class="parrafo link blanco" target="_blank">WCAG 2.1</a></li>
+                                <li class="parrafo blanco"><a class="parrafo blanco link" href="https://color-contrast-checker.deque.com/" target="_blank">Checador de contraste</a></li>
+                                <li class="parrafo blanco"><a class="parrafo blanco link" href="https://webaim.org/resources/contrastchecker/" target="_blank">WebAIM</a></li>
+                            </ul>
+                    </div>
+                </section>
+
+                <section id="html-y-aria">
+                    <img src="recursos/sticker-html.png" />
+                    <div class="flex-recursos">
+                        <h1 class="blanco titulo-secciones">HTML Y ARIA</h1>
+                        <p class="parrafo blanco">Accessible Rich Internet Applications (ARIA) es una colección de
+                            atributos que definen como realizar contenido y aplicaciónes web (especialmente las
+                            desarrolladas con Javascript) más accesibles para las personas con discapacidades.</p>
+                        <p class="parrafo blanco">Complementa HTML para que las interacciones y los widgets que se usan
+                            comúnmente en las aplicaciones puedan ser correctamente interpretadas por las tecnologías de
+                            asistencia cuando no existe otro mecanismo. Por ejemplo, ARIA habilita accesibilidad a
+                            widgets de JavaScript, sugerencias de formularios, mensajes de error, actualizaciones de
+                            contenido en vivo y más.</p>
+                        <p class="parrafo blanco">La primera regla de ARIA es "Si puede usar un elemento o atributo HTML
+                            nativo con la semántica y el comportamiento que necesita ya integrado, en lugar de
+                            reutilizar un elemento y agregar un rol, estado o propiedad de ARIA para hacerlo accesible,
+                            hágalo".</p>
+
+                            <p class="subtitulo blanco" style="font-weight: 600;">Recursos:</p>
+
+                            <ul>
+                                <li class="blanco parrafo"><a class="parrafo blanco link" href="https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA" target="_blank">MDN Web Docs</a></li>
+                                <li class="parrafo blanco"><a href="https://web.dev/learn/accessibility/aria-html?hl=es-419" class="parrafo link blanco" target="_blank">web.dev</a></li>
+                                <li class="parrafo blanco"><a class="parrafo blanco link" href="https://www.w3.org/TR/html-aria/" target="_blank">W3C</a></li>
+                                <li class="parrafo blanco"><a class="parrafo blanco link" href="https://www.w3schools.com/accessibility/accessibility_labels.php" target="_blank">w3schools</a></li>
+                            </ul>
+                    </div>
+                </section>
+
+                <section id="pruebas-accesibilidad">
+                    <img src="recursos/sticker-accesibilidad.png" />
+                    <div class="flex-recursos">
+                        <h1 class="blanco titulo-secciones">PRUEBAS DE ACCESIBILIDAD</h1>
+                        <p class="parrafo blanco">Cuando los sitios y herramientas web están bien diseñados y
+                            codificados, las personas con discapacidad pueden utilizarlos. Sin embargo, en la actualidad
+                            muchos sitios y herramientas están desarrollados incluyendo barreras de accesibilidad que
+                            dificultan o imposibilitan su uso por parte de algunas personas.
+
+                            Hacer la web accesible beneficia tanto a las personas, como a las empresas y a la sociedad
+                            en general. Los estándares web internacionales definen lo que la accesibilidad necesita.</p>
+                        <p class="parrafo blanco">La accesibilidad web depende de muchos componentes trabajando juntos,
+                            incluyendo tecnologías web, navegadores y otros "agentes de usuario", herramientas de autor
+                            y sitios web.
+
+                            La Iniciativa de Accesibilidad Web del W3C desarrolla especificaciones
+                            técnicas, pautas, técnicas y recursos que describen soluciones de accesibilidad. Estos son
+                            considerados estándares internacionales para la accesibilidad web; por ejemplo, WCAG 2.0 son
+                            también estándar ISO: ISO/IEC 40500.</p>
+                            <p class="parrafo blanco">Múltiples aspectos de la accesibilidad son sencillos de
+                                entender e implementar, mientras que algunas otras soluciones son mucho más complejas y
+                                requieren más conocimiento.
+    
+                                Es más eficiente y efectivo incorporar la accesibilidad desde el principio de los proyectos.
+                                De esta manera posteriormente no será necesario volver atrás y rehacer el trabajo.</p>
+
+                                <p class="subtitulo blanco" style="font-weight: 600;">Recursos:</p>
+
+                                <ul>
+                                    <li class="blanco parrafo"><a class="parrafo blanco link" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es" target="_blank">W3C WAI</a></li>
+                                    <li class="parrafo blanco"><a href="https://www.w3.org/WAI/standards-guidelines/es" class="parrafo link blanco" target="_blank">Estándares de accesibilidad W3C</a></li>
+                                    <li class="parrafo blanco"><a class="parrafo blanco link" href="https://www.w3.org/WAI/standards-guidelines/wcag/es" target="_blank">WCAG 2</a></li>
+                                    <li class="parrafo blanco"><a class="parrafo blanco link" href="https://html5accessibility.com/" target="_blank">HTML5 Accessibility</a></li>
+                                </ul>
+                    </div>
+                </section>
+                <section id="tipografia">
+                    <img src="recursos/sticker-tipografia.png" />
+                    <div class="flex-recursos">
+                        <h1 class="blanco titulo-secciones">TIPOGRAFÍA</h1>
+                        <p class="parrafo blanco">Existe cierta tendencia entre los diseñadores a creer que el texto pequeño da una apariencia impecable a las páginas Web y aumenta el espacio disponible por página para el contenido, en ocasiones esto provoca el uso de un tamaño de texto irrazonablemente pequeño.
+
+                            Desafortunadamente, esto no es bueno para la diversidad de plataformas que se usan para acceder a las páginas Web, desde dispositivos portátiles con pantallas diminutas, hasta los grandes proyectores conectados a los ordenadores. Incluso, en una misma plataforma, la configuración del texto podría variar.
+                            
+                            El problema que se presenta es una cuestión básica de usabilidad y accesibilidad: un buen diseño debería ser atractivo sin necesidad de que el usuario aumente o reduzca el tamaño del texto.</p>
+
+                            <p class="blanco parrafo">El diseño de fuentes para documentos de texto digitales y para la web se denomina tipografía web. Esta se basa principalmente en la tipografía clásica, pues su legibilidad depende aquí también del tamaño de la fuente, de la longitud de las líneas y del interlineado. Otros aspectos que se tienen que tener en cuenta en el caso de las fuentes para Internet son el formato de los archivos y la técnica con que se visualizan las fuentes.</p>
+
+                            <p class="subtitulo blanco" style="font-weight: 600;">Recursos:</p>
+
+                            <ul>
+                                <li class="blanco parrafo"><a class="parrafo blanco link" href="https://www.w3schools.com/css/css_font_size.asp" target="_blank">w3schools</a></li>
+                                <li class="parrafo blanco"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" class="parrafo link blanco" target="_blank">MDN Web Docs</a></li>
+                                <li class="parrafo blanco"><a class="parrafo blanco link" href="https://web.dev/learn/design/typography?hl=es-419" target="_blank">web.dev</a></li>
+                            </ul>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="div-footer">
+            <img src="recursos/logo-vision-ux-lab-blanco.png" />
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="index.html" class="parrafo">Inicio</a></li>
+                <li><a href="#" class="parrafo">Acerca de</a></li>
+                <li><a href="herramientas.html" class="parrafo">Herramientas</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="recursos.html" class="parrafo">Recursos</a></li>
+                <li><a href="index.html#contacto" class="parrafo">Contacto</a></li>
+                <li><a class="parrafo" href="politicadeprivacidad.html">Política de privacidad</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul id="hecho-por">
+                <li class="subtitulo">Hecho por:</li>
+                <li><a class="parrafo" href="https://www.instagram.com/kikelunam_/" target="_blank">Kike Luna</a></li>
+                <li><a class="parrafo" href="https://www.instagram.com/soffuyu/" target="_blank">Sofía Terrazas</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+<script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
+<script src="js/volverArriba.js"></script>
+<script src="js/nav.js"></script>
+
+<script>
+    window.addEventListener('scroll', function () {
+    let parallax1 = document.querySelector("#contraste-y-color img");
+    let parallax2 = document.querySelector("#html-y-aria img");
+    let parallax3 = document.querySelector("#pruebas-accesibilidad img");
+    let parallax4 = document.querySelector("#tipografia img");
+    let scrollY = window.scrollY;
+    parallax1.style.top = scrollY * 0.4 + "px";
+    parallax2.style.top = scrollY * 0.3 + "px";
+    parallax3.style.top = scrollY * 0.2 + "px";
+    parallax4.style.top = scrollY * 0.15 + "px";
+});
+</script>
+
+</html>

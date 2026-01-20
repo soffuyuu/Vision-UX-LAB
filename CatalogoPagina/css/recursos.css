@@ -1,0 +1,61 @@
+@import url(estilo.css);
+
+#recursos-principal{
+    padding-top: 60px;
+}
+
+#recursos-header {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url(../recursos/fondo.png), linear-gradient(90deg, rgba(0, 122, 187, 1) 0%, rgba(251, 251, 250, 1) 85%);
+    background-size: 60%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left; 
+    border-bottom: 1.5px solid var(--blanco);
+}
+
+#recursos-principal section{
+    border-bottom: 1.5px solid var(--blanco);
+    background-color: var(--morado);
+    position: relative;
+    overflow: hidden;
+}
+
+#recursos-principal section:last-of-type{
+    border:0;
+}
+
+#recursos-principal section:nth-child(odd){
+    background-color: var(--azul);
+}
+
+#recursos-principal section img{
+    width:150px;
+    position: absolute;
+    right:-3%;
+    top:35px;
+    transition: 0.3s ease;
+}
+
+.flex-recursos{
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding:35px;
+    padding-left: 0;
+    padding-right: 450px;
+}
+
+.flex-recursos ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flex-recursos ul li a{
+    transition: 0.5s ease;
+}
+
+
+

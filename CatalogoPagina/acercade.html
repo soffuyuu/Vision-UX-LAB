@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acerca de - Vision UX Lab</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/acercade.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/tipo" href="recursos/favicon.ico">
+</head>
+
+<body>
+    <main class="animate__animated animate__fadeIn">
+        <nav id="nav-escritorio">
+            <ul>
+                <li><a href="index.html"><img src="recursos/logo-vision-ux-lab.png"/></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="herramientas.html">Herramientas</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li class="active-li"><a href="acercade.html">Acerca de</a></li>
+                <li><a href="index.html #contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <nav id="nav-responsiva">
+            <a href="index.html"><img src="recursos/logo-vision-ux-lab.png"/></a>
+            <ul>
+                <li id="menu-icon" onclick="abrirNavResponsiva()"><i class="fa-solid fa-bars"></i></li>
+                <li id="close-icon" onclick="cerrarNavResponsiva()"><i class="fa fa-times"></i></li>
+                <li><a href="index.html" onclick="cerrarNavResponsiva()">Inicio</a></li>
+                <li><a href="herramientas.html" onclick="cerrarNavResponsiva()">Herramientas</a></li>
+                <li><a href="recursos.html" onclick="cerrarNavResponsiva()">Recursos</a></li>
+                <li class="active-li"><a href="acercade.html" onclick="cerrarNavResponsiva()">Acerca de</a></li>
+                <li><a href="index.html#formulario" onclick="cerrarNavResponsiva()">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="principal">
+            <div id="volver-arriba" onclick="scrollArriba()">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <section id="acercade-seccion">
+                <div id="contenedor-img-acercade">
+                <img class="img-header" src="recursos/interfaz3-4-5-6.png" />
+            </div>
+                <div id="acercade-header-2" class="header">
+                    <div class="seccion-header">
+                        <div>
+                            <h1 class="titulo blanco">VISION</h1>
+                            <h1 class="titulo blanco">UX LAB</h1>
+                        </div>
+                        <p class="parrafo blanco">Explora herramientas para diseñar interfaces accesibles para personas
+                            con discapacidades visuales.</p>
+                        <button><a href="herramientas.html">Explorar</a></button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="acercade-contenido" class="header">
+                <div class="seccion-flex">
+                    <h1 class="morado titulo-secciones">ACERCA DE</h1>
+                    <p class="parrafo morado">Vision UX Lab nace con el objetivo de transformar el diseño web y hacerlo
+                        accesible para todos, sin importar sus capacidades visuales. En un mundo digital que avanza
+                        rápidamente, es esencial que las experiencias en línea sean inclusivas, permitiendo que todas
+                        las
+                        personas, incluidas aquellas con discapacidad visual, puedan acceder, navegar y disfrutar del
+                        contenido de manera equitativa.</p>
+                </div>
+            </section>
+
+            <section id="mision-vision">
+                <div id="mision">
+                    <h1 class="titulo-secciones blanco">MISIÓN</h1>
+                    <img src="recursos/ojo.png">
+                    <p class="parrafo blanco">Proporcionar herramientas y recursos que ayuden a capaciar a diseñadores y
+                        desarrolladores para crear sitios web inclusivos, enfocados en mejorar la experiencia de
+                        usuarios con discapacidad visual.</p>
+                </div>
+                <div id="vision">
+                    <h1 class="titulo-secciones blanco">VISIÓN</h1>
+                    <img src="recursos/ojo.png">
+                    <p class="parrafo blanco">Ser un recurso valioso para diseñadores y desarrolladores que buscan
+                        mejorar la accesibilidad en sus proyectos web. Queremos promover un diseño más inclusivo para
+                        personas con discapacidad visual.</p>
+                </div>
+            </section>
+
+            <section id="banner">
+                <div id="contenedor-banner">
+                <img src="recursos/interfaz7.png" class="img-header" />
+            </div>
+                <div id="banner-header" class="header">
+                    <div class="seccion-header">
+                        <h1 class="titulo morado">TRANSFORMA EL <span class="txt-gradiente">DISEÑO</span>, HAZLO <span
+                                class="txt-gradiente">ACCESIBLE.</span></h1>
+                    </div>
+                </div>
+            </section>
+
+            <section id="llamado-a-la-accion">
+                <div id="contenedor-img-banner">
+                    <img class="img-header" src="recursos/hazlo-visible.png">
+            </div>
+                <div id="llamado-a-la-accion-header" class="header">
+                    <div class="seccion-header">
+                        <h1 class="titulo-secciones blanco">¡HAZLO VISIBLE!</h1>
+                        <p class="parrafo blanco">Te invitamos a compartir Vision UX Lab con tu comunidad. Ayúdanos a
+                            ampliar el acceso a herramientas y recursos que faciliten la creación de sitios web más
+                            accesibles.</p>
+                        <div id="contenedor-iconos">
+                            <i class="fa-brands fa-facebook" onclick="shareOn('facebook')"></i>
+                            <i class="fab fa-facebook-messenger" onclick="shareOn('messenger')"></i>
+                            <i class="fa fa-whatsapp" onclick="shareOn('whatsapp')"></i>
+                            <i class="fa-brands fa-x-twitter" onclick="shareOn('twitter')"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="div-footer">
+            <img src="recursos/logo-vision-ux-lab-blanco.png" />
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="index.html" class="parrafo">Inicio</a></li>
+                <li><a href="#" class="parrafo">Acerca de</a></li>
+                <li><a href="herramientas.html" class="parrafo">Herramientas</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="recursos.html" class="parrafo">Recursos</a></li>
+                <li><a href="index.html#contacto" class="parrafo">Contacto</a></li>
+                <li><a class="parrafo" href="politicadeprivacidad.html">Política de privacidad</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul id="hecho-por">
+                <li class="subtitulo">Hecho por:</li>
+                <li><a class="parrafo" href="https://www.instagram.com/kikelunam_/" target="_blank">Kike Luna</a></li>
+                <li><a class="parrafo" href="https://www.instagram.com/soffuyu/" target="_blank">Sofía Terrazas</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="js/volverArriba.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/redesSociales.js"></script>
+<script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
+
+</html>

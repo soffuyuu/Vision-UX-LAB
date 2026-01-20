@@ -1,0 +1,139 @@
+@import url(estilo.css);
+
+#acercade-seccion {
+    padding-top: 60px;
+}
+
+#contenedor-img-acercade{
+    width:600px;
+    position: relative;
+    float:right;
+    margin-right:150px;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+#contenedor-img-acercade img{
+    width: 100%;
+}
+
+#acercade-header-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(90deg, rgba(75, 67, 202, 0.75) 0%, rgba(0, 122, 187, 0.75) 50%, rgba(75, 67, 202, 0.75) 100%);
+}
+
+#acercade-contenido {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#mision-vision {
+    display: flex;
+}
+
+#mision-vision>div {
+    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#mision-vision>div>img {
+    width:50px;
+}
+
+#mision-vision>div>p {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+#mision {
+    background-color: var(--morado);
+}
+
+#vision {
+    background-color: var(--azul);
+}
+
+#banner{
+    background-image: url(../recursos/fondo-opacidad.png);
+    background-size: 75%;
+    background-position: center;
+}
+
+#contenedor-banner {
+    width:600px;
+    float:right;
+    top:-40px;
+    position: relative;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+#contenedor-banner img{
+    width:100%;
+}
+
+#banner-header {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#banner-header>.seccion-header{
+    width:min-content;
+}
+
+#banner-header>.seccion-header .titulo {
+    line-height: 60px;
+}
+
+.txt-gradiente {
+    background: linear-gradient(90deg, rgba(75, 67, 202, 1) 0%, rgba(0, 122, 187, 1) 30%, rgba(39, 93, 195, 1) 60%, rgba(75, 67, 202, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+
+#llamado-a-la-accion-header {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgb(0, 122, 187);
+    background: linear-gradient(90deg, rgba(75, 67, 202, 1) 0%, rgba(0, 122, 187, 1) 100%);
+}
+
+#contenedor-iconos{
+    display: flex;
+    padding:10px;
+    gap:50px;
+}
+
+#contenedor-iconos i{
+    transform: scale(2.5);
+    color:var(--verde);
+    transition: 0.5s ease;
+}
+
+#contenedor-iconos i:hover{
+    cursor: pointer;
+    color:white;
+    transition: 0.5s ease;
+}
+
+#contenedor-img-banner{
+    width:500px;
+    float: right;
+    top:40px;
+    right:40px;
+    position: relative;
+}
+
+#contenedor-img-banner img{
+    width:100%;
+}
+

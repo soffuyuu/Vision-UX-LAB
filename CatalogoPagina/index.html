@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vision UX Lab</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/x-icon" href="recursos/favicon.ico">
+</head>
+
+<body>
+    <main class="animate__animated animate__fadeIn">
+        <nav id="nav-escritorio">
+            <ul>
+                <li><a href="index.html"><img src="recursos/logo-vision-ux-lab.png" /></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#acercade">Acerca de</a></li>
+                <li><a href="#formulario">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <nav id="nav-responsiva">
+            <a href="index.html"><img src="recursos/logo-vision-ux-lab.png" /></a>
+            <ul>
+                <li id="menu-icon" onclick="abrirNavResponsiva()"><i class="fa-solid fa-bars"></i></li>
+                <li id="close-icon" onclick="cerrarNavResponsiva()"><i class="fa fa-times"></i></li>
+                <li><a href="index.html" onclick="cerrarNavResponsiva()">Inicio</a></li>
+                <li><a href="#herramientas" onclick="cerrarNavResponsiva()">Herramientas</a></li>
+                <li><a href="#recursos" onclick="cerrarNavResponsiva()">Recursos</a></li>
+                <li><a href="#acercade" onclick="cerrarNavResponsiva()">Acerca de</a></li>
+                <li><a href="#formulario" onclick="cerrarNavResponsiva()">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="principal">
+            <div id="volver-arriba" onclick="scrollArriba()">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <section id="inicio">
+                <div id="inicio-img">
+                    <img class="img-header" src="recursos/interfaz1.png"/>
+                </div>
+                <div id="inicio-header" class="header">
+                    <div class="seccion-header">
+                        <div>
+                            <h1 class="titulo morado">VISION</h1>
+                            <h1 class="titulo morado">UX LAB</h1>
+                        </div>
+                        <h2 class="subtitulo negro">Más allá de la vista, diseño accesible para todos.</h2>
+                        <p class="parrafo negro">Explora herramientas para diseñar interfaces accesibles para personas
+                            con
+                            discapacidades visuales.</p>
+                        <button><a href="herramientas.html">Explorar</a></button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="estadisticas">
+                <h2 class="subtitulo morado">Un reporte de WebAIM en 2021 analizó 1 millón de páginas y encontró que:
+                </h2>
+
+                <section id="numeros">
+                    <div class="numero">
+                        <p class="parrafo negro">El</p>
+                        <h1 class="morado titulo-secciones">86%</h1>
+                        <p class="parrafo negro">de las páginas de inicio tenían texto de bajo contraste</p>
+                    </div>
+                    <div class="numero">
+                        <p class="parrafo negro">Al</p>
+                        <h1 class="azul titulo-secciones">26%</h1>
+                        <p class="parrafo negro">de las imágenes les faltaba texto alternativo</p>
+                    </div>
+                    <div class="numero">
+                        <p class="parrafo negro">El</p>
+                        <h1 class="morado titulo-secciones">97%</h1>
+                        <p class="parrafo negro">de las páginas de inicio tenían fallas de WCAG</p>
+                    </div>
+                    <div class="numero">
+                        <p class="parrafo negro">Solo el</p>
+                        <h1 class="azul titulo-secciones">03%</h1>
+                        <p class="parrafo negro">de la web es accesible</p>
+                    </div>
+                </section>
+
+                <h2 class="subtitulo morado">En México, más de 2 millones 691 mil personas tienen problemas de visión.
+                    Los más comunes son:
+                </h2>
+
+                <section id="graficas">
+                    <div id="contenedor-graficas">
+                        <div class="div-grafica">
+                            <h1 class="titulo-1"><i class="fa-solid fa-magnifying-glass-plus"></i></h1>
+                            <div class="grafica grafica-1">
+                                <h1 class="blanco titulo-1">MIOPÍA</h1>
+                                <p class="parrafo blanco">Los rayos de luz pasan por delante de la retina en lugar de
+                                    hacerlo sobre ella, lo que se traduce en una dificultad para ver los objetos que
+                                    están lejos.</p>
+                            </div>
+                        </div>
+
+                        <div class="div-grafica">
+                            <h1 class="titulo-1"><i class="fa-solid fa-person-walking-with-cane"></i></h1>
+                            <div class="grafica grafica-2">
+                                <h1 class="blanco titulo-1">PRESBICIA</h1>
+                                <p class="parrafo blanco">Esta es una condición que ocurre con el envejecimiento,
+                                    definida como la incapacidad de enfocar las cosas de cerca. Empieza de manera
+                                    natural en personas mayores de 35 años.</p>
+                            </div>
+                        </div>
+
+                        <div class="div-grafica">
+                            <h1 class="morado titulo-1"><i class="fa-solid fa-eye"></i></h1>
+                            <div class="grafica grafica-3">
+                                <h1 class="blanco titulo-1">ASTIGMATISMO</h1>
+                                <p class="parrafo blanco">Ocurre cuando el ojo en lugar de ser redondo tiene una forma
+                                    más alargada y genera visión borrosa a cualquier distancia.</p>
+                            </div>
+                        </div>
+
+                        <div class="div-grafica">
+                            <h1 class="morado titulo-1"><i class="fa-solid fa-magnifying-glass-minus"></i></h1>
+                            <div class="grafica grafica-4">
+                                <h1 class="blanco titulo-1">HIPERMETROPÍA</h1>
+                                <p class="parrafo blanco">Los rayos de luz pasan por detrás de la retina, ocasionando
+                                    una visión borrosa de cerca, mientras que los objetos lejanos se pueden ver con
+                                    claridad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contenedor-antes-despues" class="seccion-flex">
+                    <div id="texto-antes-despues">
+                        <h2 class="subtitulo morado">Entender la problemática es solo el primer paso; contar con las
+                            herramientas correctas es lo que permite diseñar experiencias accesibles.
+                        </h2>
+
+                        <h2 class="subtitulo morado">Los diseñadores tienen la oportunidad de crear entornos digitales
+                            inclusivos, pero para hacerlo necesitan herramientas y recursos que les permitan entender,
+                            evaluar y mejorar la accesibilidad en sus proyectos.</h2>
+                    </div>
+                    <div id="antes-despues">
+                        <div id="contenedor-slider">
+                            <img src="recursos/azul.png"/>
+                            <img id="my-img" src="recursos/morado.png"/>
+                            <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="herramientas" class="seccion-flex">
+                <div>
+                <h1 class="titulo-secciones morado">HERRAMIENTAS</h1>
+                <p class="parrafo morado">Explora una colección de herramientas diseñadas para crear sitios web más accesibles. Interactúa con cada una para descubrir cómo funcionan y prueba sus funcionalidades en tiempo real.</p>
+
+                <button><a href="herramientas.html">Explorar</a></button>
+            </div>
+                <video autoplay loop muted playsinline>
+                    <source src="recursos/" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </section>
+
+            <section id="recursos" class="header">
+                <div class="seccion-flex">
+                    <h1 class="titulo-secciones blanco">RECURSOS</h1>
+                    <p class="parrafo blanco">Encuentra guías, artículos y materiales para aprender sobre accesibilidad
+                        web
+                        y mejorar tus proyectos de diseño inclusivo.</p>
+
+                    <section id="contenedor-recursos">
+                        <div class="recurso">
+                            <div class="img-recurso">
+                                <a href="recursos.html#contraste-y-color"><img src="recursos/contraste-y-color.png"/></a>
+                            </div>
+                            <label class="blanco">Contraste y color</label>
+                        </div>
+                        <div class="recurso">
+                            <div class="img-recurso">
+                                <a href="recursos.html#html-y-aria"><img src="recursos/html-y-aria.png"></a>
+                            </div>
+                            <label class="blanco">HTML y ARIA</label>
+                        </div>
+                        <div class="recurso">
+                            <div class="img-recurso">
+                                <a href="recursos.html#pruebas-accesibilidad"><img src="recursos/accesibilidad.png"/></a>
+                            </div>
+                            <label class="blanco">Pruebas de accesibilidad</label>
+                        </div>
+                        <div class="recurso">
+                            <div class="img-recurso">
+                                <a href="recursos.html#tipografia"><img src="recursos/tipografia.png"/></a>
+                            </div>
+                            <label class="blanco">Tipografía</label>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section id="acercade">
+                <div id="acercade-header" class="header">
+                    <div class="seccion-header">
+                        <h1 class="titulo-secciones morado">ACERCA DE</h1>
+                        <p class="parrafo negro">Este catálogo reúne herramientas que facilitan la creación de
+                            sitios web accesibles, especialmente para personas con discapacidad visual. Nuestro
+                            objetivo es apoyar a estudiantes y profesionales del diseño en la construcción de
+                            experiencias digitales más inclusivas y funcionales.</p>
+                        <a href="acercade.html"><button>Conoce más</button></a>
+                    </div>
+
+                    <div id="contenedor-parallax">
+                        <div id="parallax">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <section class="seccion-flex">
+                    <h1 class="titulo-secciones morado">CONTACTO</h1>
+                    <p class="parrafo morado">¿Conoces una herramienta que debería estar en este catálogo? ¿Tienes dudas
+                        sobre accesibilidad en el diseño web?</p>
+                    <p class="parrafo morado">Déjanos tu sugerencia o pregunta y trabajaremos para mejorar este espacio.
+                    </p>
+                    <section id="formulario">
+                        <form action="envia.php" method="post">
+                            <p class="morado parrafo">Nombre:</p>
+                            <input type="text" name="nombre" placeholder="Escribe tu nombre:" required>
+                            <p class="morado parrafo">Apellidos:</p>
+                            <input type="text" name="apellido" placeholder="Escribe tus apellidos:" required>
+                            <p class="morado parrafo">Correo electrónico:</p>
+                            <input type="email" name="correo" placeholder="Escribe tu correo electrónico:" required>
+                            <p class="morado parrafo">Mensaje:</p>
+                            <textarea name="mensaje" placeholder="Escribe tu mensaje:" required></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="div-footer">
+            <a href="index.html"><img src="recursos/logo-vision-ux-lab-blanco.png" /></a>
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="index.html" class="parrafo">Inicio</a></li>
+                <li><a href="#" class="parrafo">Acerca de</a></li>
+                <li><a href="herramientas.html" class="parrafo">Herramientas</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul>
+                <li><a href="recursos.html" class="parrafo">Recursos</a></li>
+                <li><a href="index.html#contacto" class="parrafo">Contacto</a></li>
+                <li><a class="parrafo" href="politicadeprivacidad.html">Política de privacidad</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul id="hecho-por">
+                <li class="subtitulo">Hecho por:</li>
+                <li><a class="parrafo" href="https://www.instagram.com/kikelunam_/" target="_blank">Kike Luna</a></li>
+                <li><a class="parrafo" href="https://www.instagram.com/soffuyu/" target="_blank">Sofía Terrazas</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="js/volverArriba.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/navInicio.js"></script>
+<script src="js/numeros.js"></script>
+<script src="js/graficas.js"></script>
+<script src="js/contacto.js"></script>
+<script src="https://kit.fontawesome.com/d47799ae54.js" crossorigin="anonymous"></script>
+
+<script>
+    window.addEventListener('scroll', function () {
+        let parallax = document.querySelector('#parallax');
+        let scrollY = window.scrollY;
+        parallax.style.right = scrollY * 0.15 + "px";
+    });
+</script>
+
+<script>
+    function slide() {
+        let slideValue = document.getElementById("slider").value;
+        document.getElementById("my-img").style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+    }
+</script>
+
+<script>
+    function peticionApi() {
+        fetch("https://api-herramientas.onrender.com")
+            .then(response => {
+                if (response.ok) {
+                    console.log("API está despierta.");
+                } else {
+                    console.log("Hubo un problema al hacer el fetch.");
+                }
+            })
+            .catch(error => {
+                console.error("Error en el fetch:", error);
+            });
+    }
+
+    setInterval(peticionApi, 600000); 
+</script>
+
+</html>
